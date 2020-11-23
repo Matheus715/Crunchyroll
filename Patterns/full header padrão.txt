@@ -1,0 +1,32 @@
+		<header class="full_header">
+			<div class="logo_container">
+				<a href="index.html"><img class="logo" src="../img/logos/logo-branco.png"></a>
+			</div>
+
+			<div class="cabecalho_content">
+				<a class="header_text premium_text" href="premium.html" >PREMIUM</a>
+				<a class="dice"><div class="dot"></div></a>
+
+				<a class="a_avatar" href="login_page.html"><img class="avatar" src="../img/icones/icone-anonimo.jpg"></a>
+
+				<label class="mode">
+					<input class="input" type="checkbox">
+					<span class="switch"></span>
+				</label>
+
+				<div class="search_bar">
+					<img class="search_icon" src="../img/icones/pesquisa.png">
+					<img class="hide_search_icon" src="../img/icones/hide_search_icon_white.png">
+					<input class="search_input" placeholder="Animes, Mangás, Etc.">
+				</div>
+
+			</div>
+
+			<ul class="header_list">
+				<li><a class="header_text" href="animes.html">Animes</a></li>
+				<li><a class="header_text" href="mangas.html">Mangás</a></li>
+				<li><a class="header_text" href="news.html">Notícias</a></li>
+				<li><a class="header_text" href="agenda.html">Calendário</a></li>
+			</ul>
+
+		</header>

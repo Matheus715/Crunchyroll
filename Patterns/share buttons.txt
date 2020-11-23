@@ -1,0 +1,5 @@
+			<div class="share_buttons">
+				<a href=""><img class="share facebook" src="../../img/icones/facebook_logo.png"></a>
+				<a href=""><img class="share twitter" src="../../img/icones/twitter_logo.png"></a>
+				<a href=""><img class="share whatsapp" src="../../img/icones/whatsapp_logo.png"></a>
+			</div>

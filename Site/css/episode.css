@@ -1,0 +1,143 @@
+body{
+	font-family: 'Maven Pro', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.short{
+	padding-top: 6%;
+}
+
+header, footer{
+	width: 100%;
+}
+
+.short_header .clicked_search_icon{
+	right: 55px;
+}
+
+.short_header .clicked_search_input{
+	right: 45px
+}
+
+.mylist, .episodes{
+	margin: 2% 1%;
+	padding: 1%;
+	border: 2px solid rgb(244, 117, 33);
+	border-radius: 7px;
+	overflow: auto;
+	max-height: 60vh;
+	height: 100%;
+}
+
+.mylist{
+	width: 10%;
+}
+
+.episodes{
+	width: 20%;
+}
+
+.mylist h1, .episodes h1{
+	color: rgb(244, 117, 33);
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 2px solid rgb(244, 117, 33);
+}
+
+.day .mylist li, .day .episodes li{
+	color: black;
+}
+
+.night .mylist li, .night .episodes li{
+	color: white;
+}
+
+.day .mylist li:hover,
+.night .mylist li:hover,
+.day .mylist .playing,
+.night .mylist .playing,
+.day .episodes li:hover,
+.night .episodes li:hover,
+.day .episodes .playing,
+.night .episodes .playing{
+	color: rgb(244, 117, 33);
+}
+
+.mylist li, .episodes li{
+	font-weight: bold;
+	margin: 5% 0;
+	box-shadow: 0.5px 0.5px 2px, 0.5px 0.5px 2px inset;
+	padding: 2%;
+	border-radius: 5px;
+}
+
+main{
+	margin: 1.7% 0 0 0;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+}
+
+.tittle{
+	text-align: center;
+	font-weight: bold;
+	color: rgb(244, 117, 33);
+	font-size: 25px;
+	margin: 0 auto;
+	padding-bottom: 2%;
+}
+
+.episode{
+	width: 90%;
+	margin: 0 auto;
+	height: 60vh;
+}
+
+.buttons{
+	width: 50%;
+	display: flex;
+	margin: 2% auto 1.5%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.like, .dislike, #previous, #next, .chosen, .not_chosen, .go_to_forum{
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.day .like, .day .dislike, .day #previous, .day #next{
+	color: black;
+}
+
+.night .like, .night .dislike, .night #previous, .night #next{
+	color: white;
+}
+
+.day .chosen, .night .chosen{
+	color: rgb(244, 117, 33);
+}
+
+.day .not_chosen, .night .not_chosen{
+	color: gray;
+}
+
+.go_to_forum{
+	background: #7579e7;
+	padding: 5px;
+	border-radius: 7px;
+	color: white;
+	font-weight: bold;
+}
+
+#previous, #next{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.episodes_ul li a{
+	text-decoration: none;
+	color: unset;
+}

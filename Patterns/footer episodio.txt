@@ -1,0 +1,36 @@
+		<footer class="footer">
+			<div class="footer_logo_container">
+				<img class="footer_logo" src="../../../Site/img/logos/logo.png">
+				<p class="copyright">© Copyright Crunchyroll 2020</p>
+			</div>
+
+			<div class="social_media">
+					<div class="follow_twitter">
+						<img src="../../../Site/img/icones/twitter.png">
+						<a href="https://twitter.com/Crunchyroll_PT?s=20">Seguir @crunchyroll_pt</a>
+					</div>
+
+					<div class="follow_youtube">
+						<img src="../../../Site/img/icones/youtube.png">
+						<a href="https://www.youtube.com/channel/UCVc-JLY3Db6-O48y7TS4N7Q">Inscreva-se</a>
+					</div>
+
+					<div class="follow_facebook">
+						<img src="../../../Site/img/icones/thumbs_up.png">
+						<a href="https://www.facebook.com/Crunchyroll.pt">Curtir 554 mil</a>
+					</div>
+
+					<div class="follow_instagram">
+						<img src="../../../Site/img/icones/instagram.png">
+						<a href="https://www.instagram.com/crunchyroll_pt/?hl=pt-br">Nos siga no Instagram</a>
+					</div>
+			</div>
+
+			<div class="div3">
+				<a href="../../../Site/páginas/noticias.html">Notícias</a>
+				<img class="news" src="../../../Site/img/icones/news.png">
+				<a href="../../../Site/páginas/forum.html">Fórum</a>
+				<img class="forum" src="../../../Site/img/icones/forum.png">
+			</div>
+
+		</footer>

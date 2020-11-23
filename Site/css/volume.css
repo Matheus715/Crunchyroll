@@ -1,0 +1,83 @@
+body{
+	font-family: 'Maven Pro', sans-serif;
+	background: rgb(20, 20, 20);
+	display: flex;
+	margin:  5% 2% 2%;
+	justify-content: space-around;
+}
+
+.logo{
+	width: 15%;
+	padding: 1% 1%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+input{
+	display: none;
+}
+
+.buttons{
+	display: flex;
+	flex-direction: column;
+	width: 10%;
+	justify-content: space-between;
+}
+
+.buttons p, .buttons a{
+	border: 2px solid rgb(244, 117, 33);
+	padding: 0.5%;
+	color: rgb(244, 117, 33);
+	border-radius: 7px;
+	box-shadow: 0 0 5px black;
+	font-weight: bold;
+	cursor: pointer;
+	margin: auto 0;
+	text-align: center;
+	user-select: none;
+}
+
+.buttons a{
+	text-decoration: none;
+}
+
+main{
+	width: 80%;
+	height: 80vh;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 5%;
+	user-select: none;
+}
+
+.container{
+	height: 100%;
+	display: flex;
+	width: 90%;
+	justify-content: space-around;
+}
+
+main img{
+	margin: 0 ;
+	width: 50%;
+	height: 100%;
+}
+
+.bookmark{
+	position: absolute;
+	background: #931a25;
+	border: 3px solid #ffe05d;
+	width: 50px;
+	height: 150px;
+	border-radius: 7px;
+	top: -15%;
+	left: 75%;
+	transition: 0.5s;
+	display: none;
+	pointer-events: none;
+}
+
+#bookmark_input:checked ~ .bookmark{
+	top: 5%;
+}

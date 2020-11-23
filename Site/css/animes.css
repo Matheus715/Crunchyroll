@@ -1,0 +1,267 @@
+body{
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.full{
+	padding-top: 23%;
+}
+
+.short{
+	padding-top: 10%;
+}
+
+.day{
+	background: white;
+	transition: 0.5s;
+}
+
+.night{
+	background: rgb(20, 20, 20);
+	transition: 0.5s;
+}
+
+header{
+	box-shadow: none;
+}
+
+/*Barra de pesquisa "filtro"*/
+
+.inner_search_bar_container{
+	padding: 0 1% 0 1%;
+	width: 50%;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	position: fixed;
+	margin-left: 2%;
+	z-index: 2;
+	top: 10.7%;
+	display: flex;
+	flex-direction: column;
+	transition: 0.5s;
+	text-align: center;
+}
+
+.day .inner_search_bar_container{
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	background: white;
+}
+
+.night .inner_search_bar_container{
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+	background: rgb(20, 20, 20);
+}
+
+.inner_search_bar{
+	width: 90%;
+	outline: none;
+	margin: 1.5% auto;
+	border-radius: 7px;
+	height: 30px;
+	font-size: large;
+	transition: 0.5s;
+}
+
+.day .inner_search_bar{
+	border: 2px solid black;
+	background: white;
+}
+
+.night .inner_search_bar{
+	border: 2px solid white;
+	background: rgb(20, 20, 20);
+	color: white;
+}
+
+.inner_search_icon{
+	width: 4%;
+	position: absolute;
+	top: 21%;
+	left: 89%;
+}
+
+/*main*/
+
+main{
+	margin: 0 2% 2% 2%;
+	border-radius: 7px;
+	padding: 2%;
+}
+
+.day main{
+	box-shadow: 0 0 5px black;
+	border: 2px solid white;
+}
+
+.night main{
+	box-shadow: 0 0 5px black;
+	border: 2px solid rgb(244 , 117, 033);
+}
+
+main h1{
+	font-weight: bold;
+	color: rgb(244 , 117, 033);
+	font-size: 25px;
+	border-bottom: 2px solid rgb(244 , 117, 033);
+}
+
+.animes{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.animes li{
+	width: 20%;
+	margin: 3% 2.5%;
+}
+
+.anime{
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	justify-content: space-around;
+	border-radius: 7px;
+	padding: 5px;
+	transition: 0.5s;
+	position: relative;
+}
+
+.day .anime{
+	border: 1px solid black;
+}
+
+.night .anime{
+	border: 1px solid white;
+}
+
+.poster{
+	width: 100%;
+	border-radius: 15px;
+}
+
+.day .poster{
+	border: 1px solid black;
+}
+
+.night .poster{
+	border: 1px solid white;
+}
+
+.anime a{
+	width: 45%;
+	height: 100%;
+}
+
+.anime .categories{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 5% 0;
+}
+
+.anime .infos{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.anime .infos a{
+	width: 100%;
+	height: auto;
+	text-decoration: none;
+	padding-bottom: 3%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.infos h1{
+	font-weight: bold;
+	color: rgb(244 , 117, 033);
+	font-size: 15px;
+	border-bottom: 2px solid rgb(244 , 117, 033);
+}
+
+.anime .categories .category{
+	background: rgb(244 , 117, 033);
+	border-radius: 7px;
+	padding: 5px 0px;
+	color: white;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.anime .infos .categories a{
+	width: 45%;
+	margin: 5% 0;
+}
+
+.anime .infos > a{
+	height: 10%;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.infos .temp, .infos .ep{
+	font-size: smaller;
+	text-align: center;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.day .infos .temp, .day .infos .ep{
+	color: black;
+}
+
+.night .infos .temp, .night .infos .ep{
+	color: white;
+}
+
+.infos .temp_info, .infos .ep_info{
+	font-size: smaller;
+	text-align: center;
+	padding-bottom: 4%;
+}
+
+.day .infos .temp_info, .day .infos .ep_info{
+	color: black;
+}
+
+.night .infos .temp_info, .night .infos .ep_info{
+	color: white;
+}
+
+.anime:hover .sinopse{
+	opacity: 1;
+}
+
+.sinopse{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.9);
+	opacity: 0;
+	transition: 0.5s;
+	top: 0;
+	padding: 2% 5%;
+	text-align: justify;
+	height: 100%;
+}
+
+.sinopse h1{
+	font-size: 15px;
+	margin-bottom: 5%;
+}
+
+.sinopse a{
+	color: white;
+	text-decoration: none;
+}
+
+.invisible{
+	display: none;
+}

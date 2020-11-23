@@ -1,0 +1,143 @@
+body{
+	font-family: 'Maven Pro', sans-serif;
+}
+
+main{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 3%;
+}
+
+.day .trending_topics, .day .historic{
+	border: 2px solid white;
+	box-shadow: 0 0 5px black;
+}
+
+.night .trending_topics, .night .historic{
+	border: 2px solid rgb(244 , 117, 033);
+	box-shadow: 0 0 5px black;
+	background: black;
+}
+
+.trending_topics, .historic{
+	width: 15%;
+	padding: 1%;
+	border-radius: 15px;
+	height: 100%;
+	position: sticky;
+	top: 15%;
+	max-height: 75vh;
+	overflow: auto;
+}
+
+.day .trending_topics h1,.day .historic h1{
+	color: black;
+}
+
+.night .trending_topics h1,.night .historic h1{
+	color: white;
+}
+
+.trending_topics h1, .historic h1{
+	top: 0;
+	font-size: 15px;
+	border-bottom: 1px solid;
+	margin-bottom: 3%;
+	padding-bottom: 1%;
+}
+
+.day .infite_content{
+	border: 2px solid white;
+	box-shadow: 0 0 5px black;
+}
+
+.night .infite_content{
+	border: 2px solid rgb(244 , 117, 033);
+	box-shadow: 0 0 5px black;
+	background: black;
+
+}
+
+.infite_content{
+	width: 50%;
+	padding: 2% 2% 0 2%;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.content{
+	padding: 1%;
+	border-radius: 15px;
+	margin: 0 0 5% 0;
+}
+
+.day .content{
+	border: 2px solid white;
+	box-shadow: 0 0 5px black;
+}
+
+.night .content{
+	border: 2px solid rgb(244 , 117, 033);
+	box-shadow: 0 0 5px black;
+	background: rgb(20, 20, 20);
+}
+
+.content h1{
+	border-bottom: 2px solid rgb(244 , 117, 033);
+	color: rgb(244 , 117, 033);
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 1%;
+}
+
+.day .content p{
+	color: black;
+}
+
+.night .content p{
+	color: white;
+}
+
+.content p{
+	margin-top: 2%;
+	text-align: justify;
+	padding: 0 5%;
+}
+
+.day .trending_topics h1:hover,
+.night .trending_topics h1:hover,
+.day .historic h1:hover,
+.night .historic h1:hover{
+	color: rgb(244 , 117, 033);
+}
+
+.load_content{
+	border: 2px solid rgb(244 , 117, 033);
+	padding: 1%;
+	margin: 0 auto 4% auto;
+	width: 50%;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.night .load_content{
+	background: rgb(20, 20, 20);
+}
+
+.load_content h1{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.day .load_content h1{
+	color: black;
+}
+
+.night .load_content h1{
+	color: white;
+}
+
+.day .load_content h1:hover,
+.night .load_content h1:hover{
+	color: rgb(244 , 117, 033);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Mangás</title>
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/header-footer.css">
+		<link rel="stylesheet" href="../css/mangas.css">
+		<link rel="icon" href="../img/logos/icon.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap">
+	</head>
+
+	<body class="day short">
+
+		<header class="short_header">
+			<div class="logo_container">
+				<a href="index.html"><img class="logo" src="../img/logos/logo-branco.png"></a>
+			</div>
+
+			<div class="cabecalho_content invisible">
+				<a class="header_text premium_text" href="premium.html">PREMIUM</a>
+				<div class="dice"><div class="dot"></div></div>
+				<div class="search_bar">
+				</div>
+			</div>
+
+			<a class="a_avatar" href="login_page.html">
+				<img class="avatar" src="../img/icones/icone-anonimo.jpg">
+			</a>
+
+			<ul class="header_list">
+					<li><a class="header_text" href="animes.html">Animes</a></li>
+					<li><a class="header_text" href="mangas.html">Mangás</a></li>
+					<li><a class="header_text" href="news.html">Notícias</a></li>
+					<li><a class="header_text" href="agenda.html">Calendário</a></li>
+			</ul>
+
+			<label class="mode">
+					<input class="input" type="checkbox">
+					<span class="switch"></span>
+			</label>
+
+			<img class="search_icon" src="../img/icones/pesquisa.png">
+			<img class="hide_search_icon" src="../img/icones/hide_search_icon.png">
+			<input class="search_input" placeholder="Animes, Mangás, Etc.">
+		</header>
+
+		<div class="inner_search_bar_container">
+			<!--<img class="inner_search_icon" src="../img/icones/pesquisa.png">-->
+			<input type="text" class="inner_search_bar" placeholder="Filtre pelo nome do Mangá">
+		</div>
+
+		<main> 
+			<h1>Mangás</h1>
+
+			<ul class="mangas"></ul>
+
+		</main>
+
+		<footer class="footer">
+			<div class="footer_logo_container">
+				<img class="footer_logo" src="../img/logos/logo.png">
+				<p class="copyright">© Copyright Crunchyroll 2020</p>
+			</div>
+
+			<div class="social_media">
+					<div class="follow_twitter">
+						<img src="../img/icones/twitter.png">
+						<a href="https://twitter.com/Crunchyroll_PT?s=20">Seguir @crunchyroll_pt</a>
+					</div>
+
+					<div class="follow_youtube">
+						<img src="../img/icones/youtube.png">
+						<a href="https://www.youtube.com/channel/UCVc-JLY3Db6-O48y7TS4N7Q">Inscreva-se</a>
+					</div>
+
+					<div class="follow_facebook">
+						<img src="../img/icones/thumbs_up.png">
+						<a href="https://www.facebook.com/Crunchyroll.pt">Curtir 554 mil</a>
+					</div>
+
+					<div class="follow_instagram">
+						<img src="../img/icones/instagram.png">
+						<a href="https://www.instagram.com/crunchyroll_pt/?hl=pt-br">Nos siga no Instagram</a>
+					</div>
+			</div>
+
+			<div class="div3">
+				<a href="noticias.html">Notícias</a>
+				<img class="news" src="../img/icones/noticias.png">
+				<a href="forum.html">Fórum</a>
+				<img class="forum" src="../img/icones/forum.png">
+			</div>
+
+		</footer>
+
+		<script src="../js/search_button.js"></script>
+		<script src="../js/mode.js"></script>
+		<script src="../js/array_get.js"></script>
+		<script src="../js/setup_mangas.js"></script>
+		<script src="../js/mangas_filter.js"></script>
+		<script src="../js/login.js"></script>
+	</body>
+</html>

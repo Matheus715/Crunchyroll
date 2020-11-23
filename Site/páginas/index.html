@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Crunchyroll</title>
+		<meta charset="UTF-8">
+		<link rel="icon" href="../img/logos/icon.png" type="image/x-icon">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/header-footer.css">
+		<link rel="stylesheet" href="../css/index.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+	<body class="day full">
+		<header class="full_header">
+			<div class="logo_container">
+				<a href="index.html"><img class="logo" src="../img/logos/logo-branco.png"></a>
+			</div>
+
+			<div class="cabecalho_content">
+				<a class="header_text premium_text" href="premium.html" >PREMIUM</a>
+				<a class="dice"><div class="dot"></div></a>
+
+				<a class="a_avatar" href="login_page.html" target="_blank"><img class="avatar" src="../img/icones/icone-anonimo.jpg"></a>
+
+				<label class="mode">
+					<input class="input" type="checkbox">
+					<span class="switch"></span>
+				</label>
+
+				<div class="search_bar">
+					<img class="search_icon" src="../img/icones/pesquisa.png">
+					<img class="hide_search_icon" src="../img/icones/hide_search_icon.png">
+					<input class="search_input" placeholder="Animes, Mangás, Etc.">
+				</div>
+
+			</div>
+
+			<ul class="header_list">
+				<li><a class="header_text" href="animes.html">Animes</a></li>
+				<li><a class="header_text" href="mangas.html">Mangás</a></li>
+				<li><a class="header_text" href="news.html">Notícias</a></li>
+				<li><a class="header_text" href="agenda.html">Calendário</a></li>
+			</ul>
+
+		</header>
+
+		<div class="start">
+
+			<div id="slider">
+				<div id="slides">
+
+					<div id="overflow">
+						<input type="radio" name="slider" id="slide1" checked>
+						<input type="radio" name="slider" id="slide2">
+						<input type="radio" name="slider" id="slide3">
+						<input type="radio" name="slider" id="slide4">
+
+						<div class="elements">
+
+							<div class="element" id="s1">
+								<a href="noticias/1.html">
+									<img src="noticias/1/banner.png">
+									<h1 class="title">Nyanpasu Passeie em uma trilha com a nova arte promocional da terceira temporada de Non Non Biyori</h1>
+								</a>
+							</div>
+
+							<div class="element" id="s2">
+								<a href="noticias/2.html">
+									<img src="noticias/2/banner.png">
+									<h1 class="title">Dublagem nova na área! Dr. STONE chega ao bloco Toonami no Cartoon Network</h1>
+								</a>
+							</div>
+
+							<div class="element" id="s3">
+								<a href="noticias/3.html">
+									<img src="noticias/3/banner.png">
+									<h1 class="title">O que seu personagem favorito de Dr. STONE diz sobre você?</h1>
+								</a>
+							</div>
+
+							<div class="element" id="s4">
+								<a href="noticias/4.html">
+									<img src="noticias/4/banner.png">
+									<h1 class="title">Crunchyroll anuncia dublagem de JUJUTSU KAISEN, TONIKAWA: Over the Moon for You, I'm Standing on a Million Lives e Noblesse</h1>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="ranking">
+				<h1>Animes mais acessados na semana</h1>
+				<div class="podium">
+
+					<div class="ranking_element" id="fourth">
+						<a href="../../Animes/Golden Time/anime_page.html">
+							<p class="position">4º</p>
+							<img src="../../Animes/Golden Time/poster.jpg">
+							<p class="nome_do_anime">Golden Time</p>
+						</a>
+					</div>
+
+					<div class="ranking_element" id="second">
+						<a href="../../Animes/Dragon Ball Super/anime_page.html">
+							<p class="position">2º</p>
+							<img src="../../Animes/Dragon Ball Super/poster.jpg">
+							<p class="nome_do_anime">Dragon Ball Super</p>
+						</a>
+					</div>
+
+					<div class="ranking_element" id="first">
+						<a href="../../Animes/Jujutsu Kaisen/anime_page.html">
+							<p class="position">1º</p>
+							<img src="../../Animes/Jujutsu Kaisen/poster.jpg">
+							<p class="nome_do_anime">Jujutsu Kaisen</p>
+						</a>
+					</div>
+
+					<div class="ranking_element" id="third">
+						<a href="../../Animes/Hunter X Hunter/anime_page.html">
+							<p class="position">3º</p>
+							<img src="../../Animes/Hunter X Hunter/poster.jpg">
+							<p class="nome_do_anime">Hunter X Hunter!!</p>
+						</a>
+					</div>
+
+					<div class="ranking_element" id="fifth">
+						<a href="../../Animes/Naruto Shippuden/anime_page.html">
+							<p class="position">5º</p>
+							<img src="../../Animes/Naruto Shippuden/poster.jpg">
+							<p class="nome_do_anime">Naruto Shippuden</p>
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<main>
+			<div class="content my_list">
+				<h1>Minha Lista</h1>
+				<div class="my_list_container container"></div>
+			</div>
+		</main>
+
+		<div class="space">
+			<div class="extension_button">
+				<h1>Carregar mais conteúdo</h1>
+			</div>
+		</div>
+
+		<script src="../js/scroll.js"></script>
+		<script src="../js/search_button.js"></script>
+		<script src="../js/mode.js"></script>
+		<script src="../js/array_get.js"></script>
+		<script src="../js/infinite.js"></script>
+		<script src="../js/login.js"></script>
+		<script src="../js/random.js"></script>
+		<script src="../js/my_list.js"></script>
+	</body>
+</html>

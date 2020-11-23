@@ -1,0 +1,94 @@
+CREATE TABLE animes(
+	Cod_anime integer PRIMARY KEY AUTO_INCREMENT,
+	Name varchar(500),
+	Synopsis text,
+	Path varchar(500),
+	Path_server varchar(500),
+	Class_1 varchar(100),
+	Class_2 varchar(100),
+	Class_3 varchar(100),
+	Class_4 varchar(100),
+	Release_date varchar(15),
+	Release_hour time,
+	Releasing_status boolean,
+	Highlight boolean,
+	Times_visited integer
+);
+
+CREATE TABLE seasons(
+	Cod_season integer PRIMARY KEY AUTO_INCREMENT,
+	Value_name varchar(50),
+	Anime integer
+);
+
+ALTER TABLE seasons ADD CONSTRAINT fk_anime_season FOREIGN KEY (Anime) REFERENCES animes (Cod_anime);
+
+CREATE TABLE episodes(
+	Cod_episode integer PRIMARY KEY AUTO_INCREMENT,
+	Name varchar(500),
+	Number integer,
+	Synopsis text,
+	Anime integer,
+	Path varchar(500),
+	Path_server varchar(500),
+	Season integer
+);
+
+ALTER TABLE episodes ADD CONSTRAINT fk_anime_episode FOREIGN KEY (Anime) REFERENCES animes (Cod_anime);
+ALTER TABLE episodes ADD CONSTRAINT fk_season_episode FOREIGN KEY (Season) REFERENCES seasons (Cod_season);
+
+
+CREATE TABLE users(
+	User_code integer PRIMARY KEY AUTO_INCREMENT,
+	Username varchar(30),
+	Email varchar(100),
+	User_password varchar(15),
+	Logged boolean,
+	Screen_mode boolean,
+	Path varchar(500)
+);
+
+CREATE TABLE news(
+	Cod_article integer PRIMARY KEY AUTO_INCREMENT,
+	Title varchar(500),
+	Sub_title varchar(500),
+	Path varchar(500),
+	Author integer,
+	Release_date date,
+	Release_hour time
+);
+
+ALTER TABLE news ADD CONSTRAINT fk_news_users FOREIGN KEY (Author) REFERENCES users (User_code); 
+
+CREATE TABLE mangas(
+	Cod_manga integer PRIMARY KEY AUTO_INCREMENT,
+	Name varchar(500),
+	Synopsis text,
+	Path varchar(500),
+	Path_server varchar(500),
+	Class_1 varchar(100),
+	Class_2 varchar(100),
+	Class_3 varchar(100),
+	Class_4 varchar(100)
+);
+
+CREATE TABLE volumes(
+	Cod_volume integer PRIMARY KEY AUTO_INCREMENT,
+	Name varchar(500),
+	Number integer,
+	Manga integer,
+	Quant_pages integer,
+	Path varchar(500),
+	Path_server varchar(500)
+);
+
+ALTER TABLE volumes ADD CONSTRAINT fk_manga_volumes FOREIGN KEY (Manga) REFERENCES mangas (Cod_manga); 
+
+CREATE TABLE list_recorder(
+	Record integer PRIMARY KEY AUTO_INCREMENT,
+	Anime integer,
+	Cod_user integer
+);
+
+ALTER TABLE list_recorder ADD CONSTRAINT fk_anime_list FOREIGN KEY (Anime) REFERENCES animes (Cod_anime);
+ALTER TABLE list_recorder ADD CONSTRAINT fk_user_list FOREIGN KEY (Cod_user) REFERENCES users (User_code);

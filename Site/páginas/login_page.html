@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Registre-se ou Entre</title>
+		<link rel="icon" href="../img/logos/icon.png">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/login.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap">
+	</head>
+	<body>
+
+		<a href="#"><img src="../img/logos/logo-branco.png" class="logo"></a>
+
+		<main class="main_log_in">
+			<div class="container">
+
+				<div class="user_infos log_in">
+					<div class="img"><img src="../img/log_in.png"></div>
+					<div class="form_container">
+						<form name="login_form" method="post" action="../jsp/login.jsp">
+							<h1>Entrar</h1>
+							<input type="text" class="username" name="login_username" placeholder="Usuário" required>
+							<input type="password" class="password" name="login_password" placeholder="Senha" required>
+							<input type="button" value="Esqueci a senha" class="forgot_password">
+							<input type="submit" value="Entrar" class="login">
+							<p>Ainda não tem uma conta? <a onclick="toggle_form();">Cadastre-se</a></p>
+						</form>
+					</div>
+				</div>
+
+				<div class="user_infos sign_up">
+					<div class="form_container">
+						<form name="signin_form" method="post" action="../jsp/signin.jsp">
+							<h1>Cadastre-se</h1>
+							<input type="text" class="username" name="signin_username" placeholder="Usuário" required>
+							<input type="email" class="e-mail" name="signin_email" placeholder="E-mail" required>
+							<input type="password" class="password" name="signin_password" placeholder="Senha" required>
+							<input type="password" class="password" name="signin_confirm_password" placeholder="Confirme a senha" required>
+							<input type="submit" value="Cadastrar" class="signup">
+							<p>Já tem uma conta? <a onclick="toggle_form();">Entrar</a></p>
+						</form>
+					</div>
+					<div class="img"><img src="../img/sign_up.png"></div>
+				</div>
+
+			</div>
+		</main>
+		<script src="../js/change_form.js"></script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+		<header class="short_header">
+			<div class="logo_container">
+				<a href="../../../Site/páginas/index.html"><img class="logo" src="../../../Site/img/logos/logo-branco.png"></a>
+			</div>
+
+			<div class="cabecalho_content invisible">
+				<a class="header_text premium_text" href="../../../Site/páginas/premium.html">PREMIUM</a>
+				<div class="dice"><div class="dot"></div></div>
+				<div class="search_bar">
+				</div>
+			</div>
+
+			<a class="a_avatar" href="../../../Site/páginas/login_page.html">
+				<img class="avatar" src="../../../Site/img/icones/icone-anonimo.jpg">
+			</a>
+
+			<ul class="header_list">
+					<li><a class="header_text" href="../../../Site/páginas/animes.html">Animes</a></li>
+					<li><a class="header_text" href="../../../Site/páginas/mangas.html">Mangás</a></li>
+					<li><a class="header_text" href="../../../Site/páginas/news.html">Notícias</a></li>
+					<li><a class="header_text" href="../../../Site/páginas/agenda.html">Calendário</a></li>
+			</ul>
+
+			<label class="mode">
+					<input class="input" type="checkbox">
+					<span class="switch"></span>
+			</label>
+
+			<img class="search_icon" src="../../../Site/img/icones/pesquisa.png">
+			<img class="hide_search_icon" src="../../../Site/img/icones/hide_search_icon.png">
+			<input class="search_input" placeholder="Animes, Mangás, Etc.">
+		</header>

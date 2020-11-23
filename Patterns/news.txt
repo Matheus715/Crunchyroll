@@ -1,0 +1,15 @@
+h1 = titulo principal da noticia
+h2 = sub-titulo
+h3 = laranja, negrito e alinhado ao centro
+h4 = laranja e negrito
+h5 = texto da sinopse
+
+strong = laranja e negrito
+<a class="bold"> = negrito
+
+class="img" = classe da imagem
+
+class="writer" = autor
+class="date" = data da noticia
+class="banner" = banner
+

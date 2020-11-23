@@ -1,0 +1,113 @@
+body{
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.short{
+	padding-top: 4.8%;
+}
+
+.days{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	box-shadow: 0 0 5px black;
+	margin-bottom: 3%;
+}
+
+.option{
+	display: none;
+}
+
+.days label{
+	margin: 2% 0;
+	font-weight: bold;
+	font-size: 15px;
+	cursor: pointer;
+	width: 10%;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.days label li{
+	transition: 0.5s;
+	height: 100%;
+}
+
+.days li:hover, 
+.day .days li:hover,
+.night .days li:hover,
+.day .days .clicked,
+.night .days .clicked{
+	font-size: 20px;
+	color: rgb(244, 117, 33);
+}
+
+.day .days li{
+	color: black;
+}
+
+.night .days li{
+	color: white;
+}
+
+.animes{
+	margin: 0 2% 3% 2%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-radius: 7px;
+	padding: 3%;
+}
+
+.day .animes{
+	box-shadow: 0 0 5px black;
+	border: 2px solid white;
+}
+
+.night .animes{
+	box-shadow: 0 0 5px black;
+	border: 2px solid rgb(244, 117, 33);
+}
+
+.anime{
+	width: 15%;
+	border: 2px solid rgb(244, 117, 33);
+	padding: 1% 2% 2% 2%;
+	border-radius: 7px;
+	position: relative;
+	margin-bottom: 5%;
+}
+
+.name{
+	color: rgb(244, 117, 33);
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+.poster{
+	width: 100%;
+	border-radius: 7px;
+	box-shadow: 0 0 5px black;
+}
+
+.broadcast{
+	position: absolute;
+	width: 100%;
+	left: -2px;
+	bottom: -10%;
+	border: 2px solid rgb(244, 117, 33);
+	border-radius: 7px;
+}
+
+.time{
+	color: rgb(244, 117, 33);
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.fade_out{
+	display: none;
+}
